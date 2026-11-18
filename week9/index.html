@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TravelEase</title>
+    
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgb(2, 24, 66);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: lightyellow;
+
+}
+nav div{
+    display: flex;
+    gap:50px
+}
+.hero{
+    background-color: royalblue;
+    text-align: center;
+    padding: 20px 10px;
+    color: lightyellow;
+    h1,p{
+        padding: 5px;
+    }
+}
+.hero img{
+    border-radius: 15px;
+}
+.features{
+    display: flex;
+    grid-template-columns: 1fr;
+    gap:16px;
+    padding: 20px;
+    justify-content: space-between;
+}
+.box{
+    padding: 20px 150px;
+    background-color: rgb(201, 205, 212);
+    text-align: center;
+    border-radius: 5px;
+
+}
+footer{
+    background-color: rgb(2, 24, 66);
+    padding: 10px;
+    text-align: center;
+    color: lightyellow;
+}
+</style>
+<body>
+    <nav>
+        <h2>TravelEase</h2>
+        <div><span>Home</span><span>Trips</span><span>Contact</span></div>
+    </nav>
+    <section class="hero">
+        <h1>Plan your next trip in minutes</h1>
+        <p>Simple, cheap and fun travel plans.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRigSkmmOA8EGEIBfD7_NKu3wHC9v4YXrnUy5KNe-mdLIy-jEogKoLiuH7Y&s=10" width="600">
+    </section>
+    <section class="features">
+        <div class="box">
+            <h3>Easy Booking</h3>
+            <p>Book in 3 clicks.</p>
+        </div>
+        <div class="box">
+            <h3>Best Prices</h3>
+            <p>We compare for you.</p>
+        </div>
+        <div class="box">
+            <h3>24x7 Help</h3>
+            <p>We are always online.</p>
+        </div>
+    </section>
+    <footer>Made by a first year student</footer>
+</body>
+
+</html>

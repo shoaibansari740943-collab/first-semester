@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboaed</title>
+</head>
+
+
+
+
+<style>
+    header {
+    background: rgb(231, 68, 146);
+    padding: 15px;
+    margin: 0px;
+    border-radius: 5px;
+    grid-area: head;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 15 px;
+    border-radius: 5px;
+    grid-area: side;
+}
+
+
+.boxs {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    display: grid;
+
+
+}
+
+.box {
+    gap: 10px;
+    border-radius: 10px;
+    border: 0;
+    background: #deeef7;
+    padding: 15px;
+}
+
+
+.main {
+    grid-template-columns: 150px 1fr;
+    display: grid;
+    grid-template-areas: "head head" "side main " "foot foot";
+    min-height: 99vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+footer {
+    background: rgb(231, 68, 146);
+    grid-area: foot;
+    padding: 15px;
+    border-radius: 5px;
+    padding-top:5px ;
+    text-align: center;
+}
+</style>
+
+
+
+<body>
+    <div class="main">
+        <header>
+            <h2> Dashboard</h2>
+        </header>
+        <aside>
+            <h3>Menu</h3>
+            <ul>
+                <li>Home</li>
+                <li>Reports</li>
+                <li>Settings</li>
+            </ul>
+        </aside>
+        <main>
+            <div class="boxs">
+                <div class="box">
+                    <span>Statement 1</span>
+                    <div>
+                        <b>120</b><br>Users
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Statement 2</span>
+                    <div>
+                        <b>Rs 45k</b><br>Sales
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Statement 3</span>
+                    <div>
+                        <b>36</b><br>Order
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Statement 4</span>
+                    <div>
+                        <b>4.8</b><br>Rating
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Statement 5</span>
+                    <div>
+                        <b>19</b><br>Messege
+                    </div>
+                </div>
+                <div class="box">
+                    <span>Statement 6</span>
+                    <div>
+                        <b>90%</b><br>Done
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Made with css grid </footer>
+    </div>
+</body>
+
+</html>
